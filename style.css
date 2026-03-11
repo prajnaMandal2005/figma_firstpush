@@ -1,0 +1,39 @@
+/* Container to hold everything */
+.hero-container {
+  display: flex;
+  justify-content: space-between; /* Pushes content left and menu right */
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+  background-image: url('your-classroom-image.jpg'); /* Exported from Figma */
+  background-size: cover;
+}
+
+.content-left h1 {
+  font-size: 48px;
+  color: #fb8500; /* Matching the orange/yellow text in your design */
+  font-family: sans-serif;
+}
+
+/* The Button Stack */
+.side-menu {
+  display: flex;
+  flex-direction: column; /* Stacks buttons vertically */
+  gap: 20px; /* Space between buttons */
+}
+
+.menu-btn {
+  width: 132px;  /* Width from your Figma Properties */
+  height: 56px;  /* Height from your Figma Properties */
+  background-color: #91D8F7; /* Blue color from Figma Fill */
+  border: 2px solid #000;    /* Stroke from your Figma Properties */
+  border-radius: 50px;       /* Corner radius for the pill shape */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background-color: #7abccf; /* Darker blue on hover */
+  transform: scale(1.05);
+}
